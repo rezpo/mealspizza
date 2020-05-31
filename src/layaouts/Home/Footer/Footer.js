@@ -2,14 +2,15 @@ import React, { Component } from 'react'
 import './Footer.scss'
 import Icon from '../../../components/icons/Icon'
 import { Link } from 'react-router-dom'
-import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { faPhoneAlt, faHouseUser } from '@fortawesome/free-solid-svg-icons'
 
 export default class Footer extends Component {
   render() {
     return (
       <div className="footer">
         <div className="footer__info">
-          <Link to="/contact">
+          <div className="address"><Icon faIcon={faHouseUser} />Apoquindo Nº71000</div>
+          <Link to="/contact" className="call">
             <Icon faIcon={faPhoneAlt} /><span>Contáctanos</span>
           </Link>
         </div>

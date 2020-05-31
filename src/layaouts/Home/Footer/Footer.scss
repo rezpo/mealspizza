@@ -1,0 +1,31 @@
+@import '../../../styles/Index.scss';
+
+.footer {
+  @include flex-end;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: .4rem 2rem;
+  width: 100%;
+  color: $white;
+  font-size: .8rem;
+  background: $secondary;
+
+  @media screen and (max-width: $tablet-large-screen){
+    padding: .5rem 1rem;
+  }
+}
+
+.footer__info {
+
+  a {
+    @include flex-start;
+    cursor: pointer;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

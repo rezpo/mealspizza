@@ -1,0 +1,39 @@
+@import '../../styles/Index.scss';
+
+.contact {
+  @include large-box-radius;
+  width: 75%;
+  padding: 40px 44px;
+  z-index: 1;
+  margin: 0 auto;
+
+  @media screen and (max-width: $mobile-large-screen){
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
+
+.contact-info {
+  @include asap-bold-title;
+  text-align: center;
+  font-size: calc(25px + (55 - 25) * ((100vw - 300px) / (1600 - 300)));
+  width: 80%;
+  margin: 0 auto;
+
+  @media screen and (max-width: $mobile-large-screen){
+    text-align: left;
+  }
+
+  .title {
+    margin-top: 0;
+  }
+}
+
+.contact-btn {
+  width: fit-content;
+  margin: 2rem auto;
+
+  a {
+    text-decoration: none;
+  }
+}

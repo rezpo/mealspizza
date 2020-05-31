@@ -1,0 +1,43 @@
+@import '../../../styles/Index.scss';
+
+.button {
+  @include flex-start;
+  @include asap-bold;
+  padding: 13px 34px;
+  border-radius: .7rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: $secondary-shadow;
+}
+
+.button--primary {
+  background: $secondary-gradient;
+  color: $white;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    background: $secondary-gradient-hover;
+  }
+}
+
+.button--secondary {
+  background: $primary-gradient;
+
+  &:hover {
+    background: $secondary-gradient-hover;
+  }
+}
+
+.button--tertiary {
+  background: $tertiary-gradient;
+
+  &:hover {
+    background: $tertiary-gradient-hover;
+  }
+}
+
+.button--unactive {
+  background: $tertiary;
+  box-shadow: none;
+
+}

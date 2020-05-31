@@ -5,7 +5,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  padding: .4rem 2rem;
+  padding: .6rem 2rem;
   width: 100%;
   color: $white;
   font-size: .8rem;
@@ -17,8 +17,14 @@
 }
 
 .footer__info {
+  @include flex-between;
+  width: 100%;
 
-  a {
+  .address {
+    @include flex-start;
+  }
+
+  .call {
     @include flex-start;
     cursor: pointer;
     color: $white;

@@ -333,7 +333,19 @@ export default class Order extends Component {
           selectedIndicator: ''
         },
         {
+          name: 'Alitas de pollo',
+          price: 3490,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
           name: 'Palitos de ajo',
+          price: 2990,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Papas fritas',
           price: 2990,
           isSelected: false,
           selectedIndicator: ''

@@ -7,9 +7,9 @@
   left: 0;
   padding: .6rem 2rem;
   width: 100%;
-  color: $white;
+  color: $black;
   font-size: .8rem;
-  background: $secondary;
+  background: $white;
 
   @media screen and (max-width: $tablet-large-screen){
     padding: .5rem 1rem;
@@ -25,13 +25,10 @@
   }
 
   .call {
+    color: $black;
+
     @include flex-start;
     cursor: pointer;
-    color: $white;
     text-decoration: none;
-
-    &:hover {
-      color: $primary;
-    }
   }
 }

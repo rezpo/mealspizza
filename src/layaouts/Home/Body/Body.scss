@@ -32,19 +32,24 @@
 }
 
 .body__caption-title {
-  @include asap-bold;
+  @include secondary-bold;
   font-size: calc(55px + (77 - 55) * ((100vw - 300px) / (1600 - 300)));
-  color: $black;
+  color: $white;
   line-height: 93.1%;
 
 }
 
 .body__paragraph {
-  @include roboto-normal;
-  color: $black;
+  @include primary-normal;
+  color: $white;
   width: 100%;
   font-weight: 300;
   font-size: x-large;
+
+  .highlight-text {
+    background: $primary;
+    color: $black;
+  }
 
 }
 

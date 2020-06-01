@@ -2,7 +2,7 @@
 
 .button {
   @include flex-start;
-  @include asap-bold;
+  @include secondary-bold;
   padding: 13px 34px;
   border-radius: .7rem;
   border: none;
@@ -21,10 +21,11 @@
 }
 
 .button--secondary {
-  background: $primary-gradient;
+  background: $primary;
+  transition: .3s ease-in-out;
 
   &:hover {
-    background: $secondary-gradient-hover;
+    background: $white;
   }
 }
 

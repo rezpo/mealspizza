@@ -2,12 +2,12 @@
 
 .order {
   @include large-box-radius;
-  width: 75%;
+  width: 90%;
   background-color: $white;
   box-shadow: $black-shadow;
-  padding: 40px 44px;
+  padding: 3rem 1rem;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
   z-index: 1;
 
   @media screen and (max-width: $tablet-large-screen) {
@@ -26,16 +26,20 @@
 }
 
 .order__header {
-  @include flex-start;
-  @include asap-bold-subtitle;
+  @include flex-between;
+  @include secondary-bold-subtitle;
   color: $black;
   margin: 0 auto;
   margin-bottom: 2rem;
-  width: 80%;
+  width: 90%;
 
   @media screen and (max-width: $tablet-large-screen) {
     width: 100%;
 
+  }
+
+  .title {
+    @include flex-start;
   }
 
 }
@@ -45,7 +49,7 @@
   position: relative;
   align-items: flex-start;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 1rem;
 
@@ -60,45 +64,42 @@
 }
 
 .order__catalog {
-  width: 50%;
-  max-height: 550px;
-  overflow: hidden;
-  overflow-y: auto;
+  @include flex-start;
+  width: 90%;
+  margin: 0 auto;
 
   @media screen and (max-width: $tablet-large-screen) {
-    max-height: 500px;
+    overflow-x: auto;
   }
 
   @media screen and (max-width: $mobile-large-screen) {
-    @include flex-start;
-    flex-direction: column;
-    max-height: 141px;
-    overflow-x: auto;
     width: 100%;
   }
 
 }
 
 .order__catalog-item {
-  @include flex-between;
-  margin-bottom: 1rem;
+  margin: 1rem .6rem;
+  position: relative;
   cursor: pointer;
+  overflow: hidden;
+  border-radius: .6rem;
+  width: 15%;
+  background: $white;
+  height: 353px;
+  box-shadow: $secondary-shadow;
 
   @media screen and (max-width: $desktop-large-screen) {
     &:hover {
       .order__catalog-pic {
         opacity: 1;
       }
-
-      .size-item {
-        color: $white;
-        background: $quaternary;
-        padding: 0 .3rem;
-      }
     }
   }
 
   @media screen and (max-width: $tablet-large-screen) {
+    width: 22%;
+
     &:hover {
       .order__catalog-pic {
         opacity: inherit;
@@ -111,12 +112,61 @@
       }
     }
   }
+
+  @media screen and (max-width: $tablet-regular-screen) {
+    width: 29.5%;
+
+    &:hover {
+      .order__catalog-pic {
+        opacity: inherit;
+      }
+
+      .size-item {
+        color: inherit;
+        background: inherit;
+        padding: inherit;
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobile-large-screen) {
+    width: 43%;
+    height: 300px;
+  }
+
+  @media screen and (max-width: $mobile-small-screen) {
+    width: 70%;
+    height: 300px;
+    margin: 1rem auto;
+  }
+
+  &.check {
+    .order__catalog-pic {
+      opacity: 1;
+    }
+
+    .order__catalog-info {
+      .order__catalog-info-description {
+        color: $white;
+      }
+
+      .order__catalog-info-title-size {
+
+        .combo,
+        .order__catalog-info-title {
+          color: $white;
+        }
+      }
+
+      .order__catalog-item-size {
+        color: $white;
+      }
+    }
+  }
 }
 
 .order__catalog-pic {
-  width: 30%;
-  overflow: hidden;
-  border-radius: 1rem;
+  width: 100%;
   opacity: .8;
   transition: .3s ease-in-out;
   position: relative;
@@ -130,8 +180,9 @@
 }
 
 .order__catalog-info {
-  width: 70%;
-  padding: 0 1rem;
+  width: 100%;
+  padding: 1rem .6rem;
+  height: 40%;
 }
 
 .order__catalog-info-title-size {
@@ -141,7 +192,8 @@
 }
 
 .order__catalog-info-title {
-  @include asap-bold-subtitle;
+  @include secondary-bold-subtitle;
+  font-size: 1rem;
   color: $black;
   text-align: left;
 
@@ -156,7 +208,7 @@
 }
 
 .order__catalog-info-size {
-  @include asap-bold-subtitle;
+  @include secondary-bold-subtitle;
   position: relative;
   color: $white;
   text-align: center;
@@ -183,10 +235,11 @@
 }
 
 .order__catalog-info-description {
-  @include roboto-normal-small;
-  font-weight: normal;
-  color: $black;
+  @include primary-normal-small;
+  color: lighten($color: $black, $amount: 40);
+  font-size: .7rem;
   margin: .5rem 0;
+  height: 48px;
 
   @media screen and (max-width: $tablet-regular-screen) {
     font-size: .7rem;
@@ -196,13 +249,14 @@
 
 .order__catalog-item-sizes {
   @include flex-start;
-  flex-direction: column;
+  bottom: 0;
+  position: absolute;
 
 }
 
 .order__catalog-item-size {
   @include flex-start;
-  @include roboto-normal-small;
+  @include primary-normal-small;
   font-weight: bold;
   width: 100%;
   margin-bottom: .2rem;
@@ -216,9 +270,8 @@
       @include flex-start;
       width: 100%;
       border-radius: 5rem;
-      padding: 6px 8px;
       margin-bottom: .2rem;
-      font-size: .9rem;
+      font-size: 1rem;
 
       @media screen and (max-width: $desktop-large-screen) {
         &:hover {
@@ -245,8 +298,8 @@
 }
 
 .order__extra {
-  width: 25%;
-  padding: 0 2rem;
+  width: 90%;
+  margin: 2rem auto;
 
   @media screen and (max-width: $tablet-large-screen) {
     padding: 0 1rem;
@@ -260,7 +313,7 @@
 }
 
 .order__extra-title {
-  @include asap-bold-subtitle;
+  @include secondary-bold-subtitle;
   color: $black;
   margin-bottom: 2rem;
 
@@ -273,55 +326,9 @@
 
 }
 
-.order__extra-item {
-  @include asap-bold;
-  @include flex-start;
-  font-size: .9rem;
-  padding: 6px 12px;
-  border-radius: 4px;
-  text-align: center;
-  margin-bottom: .7rem;
-  cursor: pointer;
-  transition: .3s ease-in-out;
-
-  @media screen and (max-width: $desktop-large-screen) {
-    background: $white;
-    box-shadow: $secondary-shadow;
-
-    &:hover {
-      background: $secondary;
-      box-shadow: $secondary-shadow-hover;
-      color: $white;
-
-    }
-  }
-
-  @media screen and (max-width: $tablet-regular-screen) {
-    font-size: .7rem;
-
-    &:hover {
-      background: inherit;
-      box-shadow: inherit;
-      color: inherit;
-
-    }
-  }
-
-  @media screen and (max-width: $mobile-large-screen) {
-    font-size: .8rem;
-
-    &:hover {
-      background: inherit;
-      box-shadow: inherit;
-      color: inherit;
-
-    }
-  }
-}
-
 .order__refreshments {
-  width: 25%;
-  padding: 0 2rem;
+  width: 90%;
+  margin: 2rem auto;
 
   @media screen and (max-width: $tablet-large-screen) {
     padding: 0 1rem;
@@ -335,73 +342,33 @@
 }
 
 .order__refreshments-title {
-  @include asap-bold-subtitle;
+  @include secondary-bold-subtitle;
   color: $black;
   margin-bottom: 2rem;
 
 }
 
-.order__refreshments-items {
+.order__extra-items {
   @include flex-evenly;
   flex-direction: column;
   align-items: flex-start;
 
 }
 
-.order__refreshments-item {
-  @include asap-bold;
-  @include flex-start;
-  font-size: .9rem;
-  background: $white;
-  padding: 6px 12px;
-  border-radius: 4px;
-  box-shadow: $secondary-shadow;
-  text-align: center;
-  margin-bottom: .7rem;
-  cursor: pointer;
-  transition: .3s ease-in-out;
-
-  @media screen and (max-width: $desktop-large-screen) {
-    &:hover {
-      background: $secondary;
-      box-shadow: $secondary-shadow-hover;
-      color: $white;
-
-    }
-  }
-
-  @media screen and (max-width: $tablet-regular-screen) {
-    font-size: .7rem;
-
-    &:hover {
-      background: inherit;
-      box-shadow: inherit;
-      color: inherit;
-
-    }
-  }
-
-  @media screen and (max-width: $mobile-large-screen) {
-    font-size: .8rem;
-
-    &:hover {
-      background: inherit;
-      box-shadow: inherit;
-      color: inherit;
-
-    }
-  }
-}
-
 .order__action {
   @include flex-between;
   flex-direction: column;
+  position: fixed;
+  bottom: 34px;
+  left: 0;
+  background: $white;
   width: 100%;
+  padding: 1rem;
 
 }
 
 .order__total {
-  @include asap-bold-subtitle;
+  @include secondary-bold-subtitle;
   color: $black;
   margin-bottom: 1rem;
   text-align: center;
@@ -415,7 +382,7 @@
   }
 
   small {
-    @include roboto-normal-small;
+    @include primary-normal-small;
     font-weight: normal;
     font-size: .7rem;
     color: rgba($color: $black, $alpha: .4);

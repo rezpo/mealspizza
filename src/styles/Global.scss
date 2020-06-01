@@ -1,6 +1,74 @@
 @import '../styles/Mixings.scss';
 @import '../styles/MediaQuerys.scss';
 
+.order__extra-item {
+  @include secondary-bold;
+  @include flex-between;
+  width: 100%;
+  font-size: .9rem;
+  padding: 10px 12px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: .7rem;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  background: $white;
+  box-shadow: $secondary-shadow;
+  color: $black;
+
+  @media screen and (max-width: $desktop-large-screen) {
+
+    &:hover {
+      background: $secondary;
+      box-shadow: $secondary-shadow-hover;
+      color: $white;
+
+    }
+  }
+
+  @media screen and (max-width: $tablet-regular-screen) {
+    font-size: .7rem;
+
+    &:hover {
+      background: $white;
+      box-shadow: $secondary-shadow;
+      color: $black;
+
+    }
+  }
+
+  @media screen and (max-width: $mobile-large-screen) {
+    font-size: .8rem;
+  }
+
+  .item-name {
+    @include flex-start;
+  }
+}
+
+.curtain__announce {
+  @include secondary-bold;
+  text-align: center;
+  font-size: calc(35px + (55 - 35) * ((100vw - 300px) / (1600 - 300)));
+  width: 67%;
+  color: $white;
+  margin: 0 auto;
+
+  .announce-title {
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: $mobile-large-screen) {
+    width: 100%;
+    text-align: left;
+  }
+
+  p {
+    @include primary-normal;
+    font-size: 1.2rem;
+  }
+}
+
 .menu__item {
   font-weight: normal;
   margin-right: 1rem;
@@ -47,7 +115,7 @@
 
   .modal-title {
     @include flex-start;
-    @include asap-bold-subtitle;
+    @include secondary-bold-subtitle;
   }
 
   .modal-close {
@@ -136,7 +204,7 @@
     margin-bottom: 1rem;
 
     label {
-      @include asap-bold;
+      @include secondary-bold;
       display: block;
       margin-bottom: .5rem;
 
@@ -146,19 +214,26 @@
 
 }
 
+.tabs-link {
+  @include flex-start;
+
+  @media screen and (max-width: $mobile-large-screen){
+    margin: .5rem auto;
+  }
+}
+
 .check {
   background: $quaternary !important;
   color: $white !important;
-  padding: 6px 12px !important;
 }
 
 .combo {
-  @include asap-bold;
+  @include secondary-bold;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   color: $black;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-right: .2rem;
 
   @media screen and (max-width: $tablet-large-screen){
@@ -170,7 +245,7 @@
   }
 
   .icon {
-    margin-right: .1rem;
+    margin-right: .2rem;
 
     svg {
       width: 15px;

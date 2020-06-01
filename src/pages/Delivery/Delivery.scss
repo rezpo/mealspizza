@@ -17,28 +17,6 @@
 
 }
 
-.delivery-info {
-  @include asap-bold;
-  text-align: center;
-  font-size: calc(35px + (55 - 35) * ((100vw - 300px) / (1600 - 300)));
-  width: 67%;
-  margin: 0 auto;
-
-  .title {
-    margin-top: 0;
-  }
-
-  @media screen and (max-width: $mobile-large-screen) {
-    width: 100%;
-    text-align: left;
-  }
-
-  p {
-    @include roboto-normal;
-    font-size: 1.2rem;
-  }
-}
-
 .delivery-contact {
   width: fit-content;
   margin: 2rem auto;

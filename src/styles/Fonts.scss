@@ -1,10 +1,10 @@
-// ASAP FAMILY
-@mixin asap-normal {font: normal normal 16px 'Asap', sans-serif;}
-@mixin asap-bold {font: normal bold 1rem 'Asap', sans-serif;}
-@mixin asap-bold-title {font: normal bold 6rem 'Asap', sans-serif;}
-@mixin asap-bold-subtitle {font: normal bold 1.2rem 'Asap', sans-serif;}
+// secondary FAMILY
+@mixin secondary-normal {font: normal normal 16px 'asap', sans-serif;}
+@mixin secondary-bold {font: normal bold 1rem 'asap', sans-serif;}
+@mixin secondary-bold-title {font: normal bold 6rem 'asap', sans-serif;}
+@mixin secondary-bold-subtitle {font: normal bold 1.2rem 'asap', sans-serif;}
 
-// ROBOTO FAMILY
-@mixin roboto-normal {font: normal 300 16px 'Roboto', sans-serif;}
-@mixin roboto-normal-small {font: normal 400 .8rem 'Roboto', sans-serif;}
-@mixin roboto-bold {font: normal 900 1rem 'Roboto', sans-serif;}
+// PRIMARY FAMILY
+@mixin primary-normal {font: normal 300 16px 'Khula', sans-serif;}
+@mixin primary-normal-small {font: normal 400 .8rem 'Khula', sans-serif;}
+@mixin primary-bold {font: normal 900 1rem 'Khula', sans-serif;}

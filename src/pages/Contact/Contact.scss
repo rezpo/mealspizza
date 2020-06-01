@@ -14,9 +14,9 @@
 }
 
 .contact-info {
-  @include asap-bold-title;
+  @include secondary-bold-title;
   text-align: center;
-  font-size: calc(25px + (55 - 25) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(35px + (55 - 35) * ((100vw - 300px) / (1600 - 300)));
   width: 80%;
   margin: 0 auto;
 
@@ -26,6 +26,7 @@
 
   .title {
     margin-top: 0;
+    color: $white;
   }
 }
 

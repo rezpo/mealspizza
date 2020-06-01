@@ -10,12 +10,12 @@ export default class Delivery extends Component {
     return (
       <Wrapper>
         <div className="delivery">
-          <div className="delivery-info">
-            <h2 className="title">¿Quieres saber el estado de tu pedido?</h2>
-            <p>Para conocer el status de tu pedido o cualquier otra consulta puedes comunicarte con nosotros a través de nuestro WhatsApp</p>
+          <div className="curtain__announce">
+            <h2 className="announce-title">¿Quieres saber el estado de tu pedido?</h2>
+            <p className="announce-paragraph">Para conocer el status de tu pedido o cualquier otra consulta puedes comunicarte con nosotros a través de nuestro WhatsApp</p>
             <div className="delivery-contact">
               <a href="https://wa.me/56961420311">
-                <ButtonMain subject="primary" isText="Hablemos por WhatsApp" isIcon={<Icon faIcon={faWhatsapp} />} />
+                <ButtonMain isSubject="secondary" isText="Hablemos por WhatsApp" isIcon={<Icon faIcon={faWhatsapp} />} />
               </a>
             </div>
           </div>

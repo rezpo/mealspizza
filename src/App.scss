@@ -22,19 +22,14 @@ html {
     border-radius: 5rem;
   }
 
-}
-
-input,
-select,
-textarea,
-button {
   :focus {
     outline: none;
   }
+
 }
 
 input {
-  @include roboto-normal;
+  @include primary-normal;
   border: 1.3px solid $black;
   border-radius: 5px;
   color: $black;
@@ -54,6 +49,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 body {
-  @include roboto-normal;
+  @include primary-normal;
+  background-color: $secondary;
+  background-image: url('./assets/pattern-pice-small.svg');
+  background-repeat: repeat;
+  background-size: auto;
 
 }

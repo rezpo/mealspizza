@@ -22,7 +22,7 @@
 }
 
 .menu__wrapper {
-  @include roboto-normal;
+  @include primary-normal;
   overflow: hidden;
   overflow-y: auto;
   max-height: 700px;
@@ -45,7 +45,7 @@
 }
 
 .menu-title {
-  @include asap-bold-subtitle;
+  @include secondary-bold-subtitle;
   @include flex-start;
   color: $black;
   margin-bottom: 2rem;
@@ -96,7 +96,7 @@
   }
 
   .menu-price {
-    @include roboto-normal;
+    @include primary-normal;
     text-align: left;
     font-size: .9rem;
   }
@@ -111,7 +111,7 @@
     }
 
     .menu-size {
-      @include roboto-normal;
+      @include primary-normal;
       background-image: $secondary-gradient;
       padding: .1rem .5rem;
       border-radius: .3rem;

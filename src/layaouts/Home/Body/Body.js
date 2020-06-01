@@ -14,12 +14,12 @@ export default class Body extends Component {
         <div className="body__caption">
           <h1 className="body__caption-title">La pizza con auténtico sabor original</h1>
           <p className="body__paragraph">
-            Descubre el verdadero sabor de la pizza como nunca antes lo has probado, y lo <strong>mejor de todo</strong> a la puerta de tu <strong>casa</strong>.
+            Descubre el verdadero sabor de la pizza como nunca antes lo has probado, y lo <strong className="highlight-text">mejor de todo</strong> a la puerta de tu <strong className="highlight-text">casa</strong>.
         </p>
           <div className="body__action">
             <div className="body__action-button">
               <Link to='/order'>
-                <ButtonMain isSubject="primary" isText="Realizar pedido" isIcon={<Icon faIcon={faPizzaSlice} />} />
+                <ButtonMain isSubject="secondary" isText="Realizar pedido" isIcon={<Icon faIcon={faPizzaSlice} />} />
               </Link>
             </div>
           </div>

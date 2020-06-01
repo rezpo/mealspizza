@@ -3,6 +3,7 @@
 .header {
   @include flex-between;
   margin: 0 49px;
+  margin-bottom: 3rem;
 
   @media screen and (max-width: $tablet-large-screen) {
     margin: 0;

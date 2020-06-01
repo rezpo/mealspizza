@@ -17,11 +17,6 @@ export default class Header extends Component {
               <ButtonSecondary isSubject='primary' isText='Delivery' isIcon={<Icon faIcon={faBicycle} />} />
             </Link>
           </div>
-          <div className="menu__item">
-            <Link to="/menu">
-              <ButtonSecondary isSubject='secondary' isText='Menú' />
-            </Link>
-          </div>
         </div>
       </div>
     )

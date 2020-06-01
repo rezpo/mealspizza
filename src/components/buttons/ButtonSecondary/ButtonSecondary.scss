@@ -10,9 +10,16 @@
 }
 
 .button-secondary--primary {
-  background: transparent;
-  border: 2px solid $black;
-  color: $black;
+  background: $secondary;
+  color: $white;
+  box-shadow: $secondary-shadow--small;
+  border: none;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    background: $white;
+    color: $black;
+  }
 }
 
 .button-secondary--secondary {

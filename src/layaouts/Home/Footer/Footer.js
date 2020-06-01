@@ -9,7 +9,7 @@ export default class Footer extends Component {
     return (
       <div className="footer">
         <div className="footer__info">
-          <div className="address"><Icon faIcon={faHouseUser} />Apoquindo Nº71000</div>
+          <div className="address"><Icon faIcon={faHouseUser} />Apoquindo Nº7100</div>
           <Link to="/contact" className="call">
             <Icon faIcon={faPhoneAlt} /><span>Contáctanos</span>
           </Link>

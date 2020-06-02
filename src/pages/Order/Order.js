@@ -688,7 +688,7 @@ export default class Order extends Component {
               </div>
               :
               <div className="order__submit">
-                <a href={`https://wa.me/56961420311?text=${fullName} para completar tu pedido solo debes hacer transferencia a%0A%0AMaria Antonella Perez%0ARut 25124016-7%0ACuenta cte 0215303743%0ABanco ITAU%0Amealspizza@gmail.cl%0A%0ADetalle de tu pedido%0A%0A${msgCompleteOrder}%0ATotal: $${totalSumary + deliveryCost}%0ADespacho a ${deliveryAddress}%0ANº de contacto ${'56' + contactNumber}`}>
+                <a href={`https://wa.me/56920469612?text=${fullName} para completar tu pedido solo debes hacer transferencia a%0A%0AMaria Antonella Perez%0ARut 25124016-7%0ACuenta cte 0215303743%0ABanco ITAU%0Amealspizza@gmail.cl%0A%0ADetalle de tu pedido%0A%0A${msgCompleteOrder}%0ATotal: $${totalSumary + deliveryCost}%0ADespacho a ${deliveryAddress}%0ANº de contacto 56${contactNumber}`}>
                   <ButtonMain isSubject='primary' isText='Confirmar pedido' isIcon={<Icon faIcon={faThumbsUp} />} />
                 </a>
               </div>

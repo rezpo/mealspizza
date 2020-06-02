@@ -14,7 +14,7 @@ export default class Delivery extends Component {
             <h2 className="announce-title">¿Quieres saber el estado de tu pedido?</h2>
             <p className="announce-paragraph">Para conocer el status de tu pedido o cualquier otra consulta puedes comunicarte con nosotros a través de nuestro WhatsApp</p>
             <div className="delivery-contact">
-              <a href="https://wa.me/56961420311">
+              <a href="https://wa.me/56920469612">
                 <ButtonMain isSubject="secondary" isText="Hablemos por WhatsApp" isIcon={<Icon faIcon={faWhatsapp} />} />
               </a>
             </div>

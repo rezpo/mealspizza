@@ -20,56 +20,56 @@ export default class Order extends Component {
           photo: 'https://www.dropbox.com/s/xd7iw1r0mlax34a/cmb0.jpg?raw=1',
           title: 'De la casa',
           description: '2 Pizzas familiares: Pepperoni y Solo queso + Bebida 1.5lts',
-          size: { size: 'L', price: 13990, id: 'CMB0', selectedIndicator: '', isSelected: false, name: 'Oferta de la casa' },
+          size: { size: 'FAM', price: 13990, id: 'CMB0', selectedIndicator: '', isSelected: false, name: 'Oferta de la casa' },
           isCombo: true
         },
         {
           photo: 'https://www.dropbox.com/s/8ygdc40kho0mw3z/cmb1.jpg?raw=1',
           title: '1',
           description: '1 Pizza familiar de la casa + 1 Porción de palitos tropicales + Bebida 1.5lts',
-          size: { size: 'L', price: 14990, id: 'CMB1', selectedIndicator: '', isSelected: false, name: 'Combo 1' },
+          size: { size: 'FAM', price: 14990, id: 'CMB1', selectedIndicator: '', isSelected: false, name: 'Combo 1' },
           isCombo: true
         },
         {
           photo: 'https://www.dropbox.com/s/x95pvubgbnteirk/cmb2.jpg?raw=1',
           title: '2',
           description: '1 Pizzas familiar (pollo bbq) + 1 Pizza mediana (napolitana) + Palitos de ajo + Bebida 1.5lts',
-          size: { size: 'L', price: 19490, id: 'CMB2', selectedIndicator: '', isSelected: false, name: 'Combo 2' },
+          size: { size: 'FAM', price: 19490, id: 'CMB2', selectedIndicator: '', isSelected: false, name: 'Combo 2' },
           isCombo: true
         },
         {
           photo: 'https://www.dropbox.com/s/6g07pe66pip7are/cmb3.jpg?raw=1',
           title: '3',
           description: '1 Pizza pollo champiñón + 1 Pizza italiana + Bebida 1.5lts',
-          size: { size: 'L', price: 19490, id: 'CMB3', selectedIndicator: '', isSelected: false, name: 'Combo 3' },
+          size: { size: 'FAM', price: 19490, id: 'CMB3', selectedIndicator: '', isSelected: false, name: 'Combo 3' },
           isCombo: true
         },
         {
           photo: 'https://www.dropbox.com/s/afo5c63ejjj1enr/cmb4.jpg?raw=1',
           title: '4',
           description: '2 Pizzas familiares: Montañera y Hawaiana + Palitos de ajo + Bebida 1.5lts',
-          size: { size: 'L', price: 23990, id: 'CMB4', selectedIndicator: '', isSelected: false, name: 'Combo 4' },
+          size: { size: 'FAM', price: 23990, id: 'CMB4', selectedIndicator: '', isSelected: false, name: 'Combo 4' },
           isCombo: true
         },
         {
           photo: 'https://www.dropbox.com/s/t2xq1dd3bt96h2h/cmb5.jpg?raw=1',
           title: '5',
           description: '2 Pizzas familiares (con 3 ingredientes a elección por pizza) + Bebida 1.5lts',
-          size: { size: 'L', price: 21990, id: 'CMB5', selectedIndicator: '', isSelected: false, name: 'Combo 5' },
+          size: { size: 'FAM', price: 21990, id: 'CMB5', selectedIndicator: '', isSelected: false, name: 'Combo 5' },
           isCombo: true
         },
         {
           photo: 'https://www.dropbox.com/s/r9zrx60n7ns46jp/REM0.jpg?raw=1',
           title: 'De la casa',
           description: 'Mozzarella, carne, tocino, cebolla y base BBQ',
-          size: { size: 'M', price: 8990, id: 'REM0', selectedIndicator: '', isSelected: false, name: 'De la casa' },
+          size: { size: 'MED', price: 8990, id: 'REM0', selectedIndicator: '', isSelected: false, name: 'De la casa' },
           isCombo: false
         },
         {
           photo: 'https://www.dropbox.com/s/r9zrx60n7ns46jp/REM0.jpg?raw=1',
           title: 'De la casa',
           description: 'Mozzarella, carne, tocino, cebolla y base BBQ',
-          size: { size: 'L', price: 10990, id: 'REL0', selectedIndicator: '', isSelected: false, name: 'De la casa' },
+          size: { size: 'FAM', price: 10990, id: 'REL0', selectedIndicator: '', isSelected: false, name: 'De la casa' },
           isCombo: false
         },
         {
@@ -83,14 +83,14 @@ export default class Order extends Component {
           photo: 'https://www.dropbox.com/s/30rsvlsbj2dzl25/REM1.jpg?raw=1',
           title: 'Hawaiana',
           description: 'Mozzarella, piña y jamón',
-          size: { size: 'M', price: 8990, id: 'REM1', selectedIndicator: '', isSelected: false, name: 'Hawaiana' },
+          size: { size: 'MED', price: 8990, id: 'REM1', selectedIndicator: '', isSelected: false, name: 'Hawaiana' },
           isCombo: false
         },
         {
           photo: 'https://www.dropbox.com/s/30rsvlsbj2dzl25/REM1.jpg?raw=1',
           title: 'Hawaiana',
           description: 'Mozzarella, piña y jamón',
-          size: { size: 'L', price: 10990, id: 'REL1', selectedIndicator: '', isSelected: false, name: 'Hawaiana' },
+          size: { size: 'FAM', price: 10990, id: 'REL1', selectedIndicator: '', isSelected: false, name: 'Hawaiana' },
           isCombo: false
         },
         {
@@ -104,14 +104,14 @@ export default class Order extends Component {
           photo: 'https://www.dropbox.com/s/danpcm6ga6ini13/REM2.jpg?raw=1',
           title: 'Pollo champiñón',
           description: 'Mozzarella, pollo y champiñón',
-          size: { size: 'M', price: 7990, id: 'REM2', selectedIndicator: '', isSelected: false, name: 'Pollo champiñón' },
+          size: { size: 'MED', price: 7990, id: 'REM2', selectedIndicator: '', isSelected: false, name: 'Pollo champiñón' },
           isCombo: false
         },
         {
           photo: 'https://www.dropbox.com/s/danpcm6ga6ini13/REM2.jpg?raw=1',
           title: 'Pollo champiñón',
           description: 'Mozzarella, pollo y champiñón',
-          size: { size: 'L', price: 9990, id: 'REL2', selectedIndicator: '', isSelected: false, name: 'Pollo champiñón' },
+          size: { size: 'FAM', price: 9990, id: 'REL2', selectedIndicator: '', isSelected: false, name: 'Pollo champiñón' },
           isCombo: false
         },
         {
@@ -125,14 +125,14 @@ export default class Order extends Component {
           photo: 'https://www.dropbox.com/s/wibny9dipwrz552/REM3.jpg?raw=1',
           title: 'Montañera',
           description: 'Mozzarella, carne, tocino, choclo y maduro',
-          size: { size: 'M', price: 9990, id: 'REM3', selectedIndicator: '', isSelected: false, name: 'Montañera' },
+          size: { size: 'MED', price: 9990, id: 'REM3', selectedIndicator: '', isSelected: false, name: 'Montañera' },
           isCombo: false
         },
         {
           photo: 'https://www.dropbox.com/s/wibny9dipwrz552/REM3.jpg?raw=1',
           title: 'Montañera',
           description: 'Mozzarella, carne, tocino, choclo y maduro',
-          size: { size: 'L', price: 11490, id: 'REL3', selectedIndicator: '', isSelected: false, name: 'Montañera' },
+          size: { size: 'FAM', price: 11490, id: 'REL3', selectedIndicator: '', isSelected: false, name: 'Montañera' },
           isCombo: false
         },
         {
@@ -146,14 +146,14 @@ export default class Order extends Component {
           photo: 'https://www.dropbox.com/s/omxz5dtqytr927j/REM4.jpg?raw=1',
           title: 'BBQ',
           description: 'Mozzarella, pollo, tocino, cebolla, base BBQ',
-          size: { size: 'M', price: 7990, id: 'REM4', selectedIndicator: '', isSelected: false, name: 'BBQ' },
+          size: { size: 'MED', price: 7990, id: 'REM4', selectedIndicator: '', isSelected: false, name: 'BBQ' },
           isCombo: false
         },
         {
           photo: 'https://www.dropbox.com/s/omxz5dtqytr927j/REM4.jpg?raw=1',
           title: 'BBQ',
           description: 'Mozzarella, pollo, tocino, cebolla, base BBQ',
-          size: { size: 'L', price: 9990, id: 'REL4', selectedIndicator: '', isSelected: false, name: 'BBQ' },
+          size: { size: 'FAM', price: 9990, id: 'REL4', selectedIndicator: '', isSelected: false, name: 'BBQ' },
           isCombo: false
         },
         {
@@ -167,14 +167,14 @@ export default class Order extends Component {
           photo: 'https://www.dropbox.com/s/2kldkhz9jqbnij1/REM5.jpg?raw=1',
           title: 'Italiana',
           description: 'Mozzarella, churrasco, tomate y palta.',
-          size: { size: 'M', price: 8990, id: 'REM5', selectedIndicator: '', isSelected: false, name: 'Italiana' },
+          size: { size: 'MED', price: 8990, id: 'REM5', selectedIndicator: '', isSelected: false, name: 'Italiana' },
           isCombo: false
         },
         {
           photo: 'https://www.dropbox.com/s/2kldkhz9jqbnij1/REM5.jpg?raw=1',
           title: 'Italiana',
           description: 'Mozzarella, churrasco, tomate y palta.',
-          size: { size: 'L', price: 10990, id: 'REL5', selectedIndicator: '', isSelected: false, name: 'Italiana' },
+          size: { size: 'FAM', price: 10990, id: 'REL5', selectedIndicator: '', isSelected: false, name: 'Italiana' },
           isCombo: false
         },
         {
@@ -188,14 +188,14 @@ export default class Order extends Component {
           photo: 'https://www.dropbox.com/s/jtnnw9xuoluu5x2/REM6.jpg?raw=1',
           title: 'Napolitana',
           description: 'Mozzarella, tomate y orégano',
-          size: { size: 'M', price: 6990, id: 'REM6', selectedIndicator: '', isSelected: false, name: 'Napolitana' },
+          size: { size: 'MED', price: 6990, id: 'REM6', selectedIndicator: '', isSelected: false, name: 'Napolitana' },
           isCombo: false
         },
         {
           photo: 'https://www.dropbox.com/s/jtnnw9xuoluu5x2/REM6.jpg?raw=1',
           title: 'Napolitana',
           description: 'Mozzarella, tomate y orégano',
-          size: { size: 'L', price: 8990, id: 'REL6', selectedIndicator: '', isSelected: false, name: 'Napolitana' },
+          size: { size: 'FAM', price: 8990, id: 'REL6', selectedIndicator: '', isSelected: false, name: 'Napolitana' },
           isCombo: false
         },
         {
@@ -209,14 +209,14 @@ export default class Order extends Component {
           photo: 'https://www.dropbox.com/s/i8jrf6esvypzkoi/REM7.jpg?raw=1',
           title: 'Pepperoni',
           description: 'Extra mozzarella y pepperoni',
-          size: { size: 'M', price: 4990, id: 'REM7', selectedIndicator: '', isSelected: false, name: 'Pepperoni' },
+          size: { size: 'MED', price: 4990, id: 'REM7', selectedIndicator: '', isSelected: false, name: 'Pepperoni' },
           isCombo: false
         },
         {
           photo: 'https://www.dropbox.com/s/i8jrf6esvypzkoi/REM7.jpg?raw=1',
           title: 'Pepperoni',
           description: 'Extra mozzarella y pepperoni',
-          size: { size: 'L', price: 8990, id: 'REL7', selectedIndicator: '', isSelected: false, name: 'Pepperoni' },
+          size: { size: 'FAM', price: 8990, id: 'REL7', selectedIndicator: '', isSelected: false, name: 'Pepperoni' },
           isCombo: false
         },
         {
@@ -230,14 +230,14 @@ export default class Order extends Component {
           photo: 'https://www.dropbox.com/s/j98qvwvbulzbnvi/REM8.jpg?raw=1',
           title: 'Solo queso',
           description: 'Extra de mozzarella',
-          size: { size: 'M', price: 4990, id: 'REM8', selectedIndicator: '', isSelected: false, name: 'Solo queso' },
+          size: { size: 'MED', price: 4990, id: 'REM8', selectedIndicator: '', isSelected: false, name: 'Solo queso' },
           isCombo: false
         },
         {
           photo: 'https://www.dropbox.com/s/j98qvwvbulzbnvi/REM8.jpg?raw=1',
           title: 'Solo queso',
           description: 'Extra de mozzarella',
-          size: { size: 'L', price: 6990, id: 'REL8', selectedIndicator: '', isSelected: false, name: 'Solo queso' },
+          size: { size: 'FAM', price: 6990, id: 'REL8', selectedIndicator: '', isSelected: false, name: 'Solo queso' },
           isCombo: false
         },
         {
@@ -251,14 +251,14 @@ export default class Order extends Component {
           photo: 'https://www.dropbox.com/s/dvcgwmqp7f35rfz/REM9.jpg?raw=1',
           title: 'Vegetariana',
           description: 'Mozzarella, tomate, pimentón verde y rojo, choclo y champiñón',
-          size: { size: 'M', price: 7990, id: 'REM9', selectedIndicator: '', isSelected: false, name: 'Vegetariana' },
+          size: { size: 'MED', price: 7990, id: 'REM9', selectedIndicator: '', isSelected: false, name: 'Vegetariana' },
           isCombo: false
         },
         {
           photo: 'https://www.dropbox.com/s/dvcgwmqp7f35rfz/REM9.jpg?raw=1',
           title: 'Vegetariana',
           description: 'Mozzarella, tomate, pimentón verde y rojo, choclo y champiñón',
-          size: { size: 'L', price: 9990, id: 'REL9', selectedIndicator: '', isSelected: false, name: 'Vegetariana' },
+          size: { size: 'FAM', price: 9990, id: 'REL9', selectedIndicator: '', isSelected: false, name: 'Vegetariana' },
           isCombo: false
         },
         {
@@ -272,14 +272,14 @@ export default class Order extends Component {
           photo: 'https://www.dropbox.com/s/7k78ujxrmf7j6wq/REM10.jpg?raw=1',
           title: 'Vegana',
           description: 'Queso vegano, pimentón verde y rojo, choclo, aceituna y tomate',
-          size: { size: 'M', price: 8990, id: 'REM10', selectedIndicator: '', isSelected: false, name: 'Vegana' },
+          size: { size: 'MED', price: 8990, id: 'REM10', selectedIndicator: '', isSelected: false, name: 'Vegana' },
           isCombo: false
         },
         {
           photo: 'https://www.dropbox.com/s/7k78ujxrmf7j6wq/REM10.jpg?raw=1',
           title: 'Vegana',
           description: 'Queso vegano, pimentón verde y rojo, choclo, aceituna y tomate',
-          size: { size: 'L', price: 10990, id: 'REL10', selectedIndicator: '', isSelected: false, name: 'Vegana' },
+          size: { size: 'FAM', price: 10990, id: 'REL10', selectedIndicator: '', isSelected: false, name: 'Vegana' },
           isCombo: false
         },
         {
@@ -423,7 +423,7 @@ export default class Order extends Component {
       extraSelected: [],
       refreshmentSelected: [],
       order: [],
-      deliveryCost: 1300,
+      deliveryCost: 0,
       modalIsOpen: false,
       fullName: '',
       contactNumber: '',

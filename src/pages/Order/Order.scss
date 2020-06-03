@@ -225,6 +225,11 @@
     height: 18px;
   }
 
+  @media screen and (max-width: $mobile-large-screen) {
+    font-size: .6rem;
+    padding: .3rem .7rem;
+  }
+
   .size {
     position: absolute;
     left: 50%;

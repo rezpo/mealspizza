@@ -389,32 +389,14 @@ export default class Order extends Component {
           selectedIndicator: ''
         },
         {
-          name: 'Fanta zero 1.5lts',
+          name: 'Fanta 1.5lts',
           price: 2490,
           isSelected: false,
           selectedIndicator: ''
         },
         {
-          name: 'Sprite light 1.5lts',
+          name: 'Sprite 1.5lts',
           price: 2490,
-          isSelected: false,
-          selectedIndicator: ''
-        },
-        {
-          name: 'Coca cola lata',
-          price: 1000,
-          isSelected: false,
-          selectedIndicator: ''
-        },
-        {
-          name: 'Fanta zero lata',
-          price: 1000,
-          isSelected: false,
-          selectedIndicator: ''
-        },
-        {
-          name: 'Sprite light lata',
-          price: 1000,
           isSelected: false,
           selectedIndicator: ''
         }

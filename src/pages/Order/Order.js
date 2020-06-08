@@ -351,8 +351,62 @@ export default class Order extends Component {
           selectedIndicator: ''
         },
         {
-          name: 'Boder de queso',
+          name: 'Borde de queso',
           price: 1990,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Extra de queso',
+          price: 800,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Pimentón verde',
+          price: 800,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Champiñón',
+          price: 800,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Palta',
+          price: 800,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Platano maduro',
+          price: 800,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Aceitunas',
+          price: 800,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Choclo',
+          price: 800,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Tocino',
+          price: 800,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Pollo',
+          price: 800,
           isSelected: false,
           selectedIndicator: ''
         },
@@ -389,13 +443,49 @@ export default class Order extends Component {
           selectedIndicator: ''
         },
         {
+          name: 'Coca cola zero 1.5lts',
+          price: 2490,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Coca cola light 1.5lts',
+          price: 2490,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
           name: 'Fanta 1.5lts',
           price: 2490,
           isSelected: false,
           selectedIndicator: ''
         },
         {
+          name: 'Fanta zero 1.5lts',
+          price: 2490,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Fanta light 1.5lts',
+          price: 2490,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
           name: 'Sprite 1.5lts',
+          price: 2490,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Sprite zero 1.5lts',
+          price: 2490,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
+          name: 'Sprite light 1.5lts',
           price: 2490,
           isSelected: false,
           selectedIndicator: ''

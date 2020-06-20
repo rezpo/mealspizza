@@ -189,6 +189,21 @@
 
     }
   }
+
+  .product-msg {
+    width: 20%;
+    display: block;
+    text-align: right;
+
+    @media screen and (max-width: $mobile-large-screen){
+      font-size: .8rem;
+    }
+
+    span {
+      float: right;
+
+    }
+  }
 }
 
 .modal-delivery {

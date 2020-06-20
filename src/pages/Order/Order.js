@@ -495,7 +495,7 @@ export default class Order extends Component {
       extraSelected: [],
       refreshmentSelected: [],
       order: [],
-      deliveryCost: 0,
+      deliveryCost: 'Gratis',
       modalIsOpen: false,
       fullName: '',
       contactNumber: '',
@@ -734,9 +734,9 @@ export default class Order extends Component {
               <div className="order-cost">
                 <div className="modal-product">
                   <span className="product-name">Delivery</span>
-                  <span className="product-price"><NumberFormat value={deliveryCost} displayType={'text'} thousandSeparator={'.'} prefix={'$'} decimalSeparator={','} /></span>
+                  <span className="product-msg">{deliveryCost}</span>
                 </div>
-                <strong className="product-total">Total: <NumberFormat value={totalSumary + deliveryCost} displayType={'text'} thousandSeparator={'.'} prefix={'$'} decimalSeparator={','} /></strong>
+                <strong className="product-total">Total: <NumberFormat value={totalSumary} displayType={'text'} thousandSeparator={'.'} prefix={'$'} decimalSeparator={','} /></strong>
               </div>
               <div className="modal-delivery">
                 <div className="delivery-title"><Icon faIcon={faBicycle} /><strong>Información de despacho</strong></div>
@@ -760,7 +760,7 @@ export default class Order extends Component {
               </div>
               :
               <div className="order__submit">
-                <a href={`https://wa.me/56920469612?text=${fullName} para completar tu pedido solo debes hacer transferencia a%0A%0AMaria Antonella Perez%0ARut 25124016-7%0ACuenta cte 0215303743%0ABanco ITAU%0Amealspizza@gmail.cl%0A%0ADetalle de tu pedido%0A%0A${msgCompleteOrder}%0ATotal: $${totalSumary + deliveryCost}%0ADespacho a ${deliveryAddress}%0ANº de contacto 56${contactNumber}`}>
+                <a href={`https://wa.me/56920469612?text=${fullName} para completar tu pedido solo debes hacer transferencia a%0A%0AMaria Antonella Perez%0ARut 25124016-7%0ACuenta cte 0215303743%0ABanco ITAU%0Amealspizza@gmail.cl%0A%0ADetalle de tu pedido%0A%0A${msgCompleteOrder}%0ATotal: $${totalSumary}%0ADespacho a ${deliveryAddress}%0ANº de contacto 56${contactNumber}`}>
                   <ButtonMain isSubject='primary' isText='Confirmar pedido' isIcon={<Icon faIcon={faThumbsUp} />} />
                 </a>
               </div>

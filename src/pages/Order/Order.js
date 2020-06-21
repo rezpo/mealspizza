@@ -411,6 +411,12 @@ export default class Order extends Component {
           selectedIndicator: ''
         },
         {
+          name: 'Piña',
+          price: 800,
+          isSelected: false,
+          selectedIndicator: ''
+        },
+        {
           name: 'Salsa BBQ spicy',
           price: 300,
           isSelected: false,
@@ -467,12 +473,6 @@ export default class Order extends Component {
           selectedIndicator: ''
         },
         {
-          name: 'Fanta light 1.5lts',
-          price: 2490,
-          isSelected: false,
-          selectedIndicator: ''
-        },
-        {
           name: 'Sprite 1.5lts',
           price: 2490,
           isSelected: false,
@@ -484,12 +484,6 @@ export default class Order extends Component {
           isSelected: false,
           selectedIndicator: ''
         },
-        {
-          name: 'Sprite light 1.5lts',
-          price: 2490,
-          isSelected: false,
-          selectedIndicator: ''
-        }
       ],
       catalogSelected: [],
       extraSelected: [],

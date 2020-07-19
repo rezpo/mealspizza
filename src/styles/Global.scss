@@ -58,6 +58,11 @@
     margin-top: 0;
   }
 
+  .announce-spotlight {
+    margin-top: 0;
+    font-size: 1.4rem;
+  }
+
   @media screen and (max-width: $mobile-large-screen) {
     width: 100%;
     text-align: left;
@@ -203,6 +208,16 @@
       float: right;
 
     }
+
+    .icon {
+      width: 13px;
+      margin-left: .3rem;
+      cursor: pointer;
+
+      svg {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -227,6 +242,32 @@
 
   }
 
+}
+
+.dropdown-list {
+  @include flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: .2s ease-in-out;
+}
+
+.dropdown-list-item {
+  margin: .1rem 0;
+  width: 100%;
+  text-align: right;
+}
+
+.dropdown-list-active {
+  height: 7rem;
+  opacity: 1;
+  visibility: visible;
 }
 
 .tabs-link {

@@ -3,7 +3,7 @@ import Wrapper from '../../components/wrapper/Wrapper'
 import ButtonMain from '../../components/buttons/ButtonMain/ButtonMain'
 import ButtonSecondary from '../../components/buttons/ButtonSecondary/ButtonSecondary'
 import Icon from '../../components/icons/Icon'
-import { faPizzaSlice, faTrashAlt, faStar, faBicycle, faThumbsUp, faHandPointUp, faUtensils, faClipboardList, faTimes, faBeer, faCookieBite, faChevronDown, faArrowDown, faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons'
+import { faPizzaSlice, faTrashAlt, faStar, faBicycle, faThumbsUp, faHandPointUp, faUtensils, faClipboardList, faTimes, faBeer, faCookieBite, faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons'
 import NumberFormat from 'react-number-format'
 import Modal from 'react-modal'
 import { HashLink as Link } from 'react-router-hash-link';

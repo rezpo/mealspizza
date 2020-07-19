@@ -3,7 +3,7 @@ import Wrapper from '../../components/wrapper/Wrapper'
 import ButtonMain from '../../components/buttons/ButtonMain/ButtonMain'
 import ButtonSecondary from '../../components/buttons/ButtonSecondary/ButtonSecondary'
 import Icon from '../../components/icons/Icon'
-import { faPizzaSlice, faTrashAlt, faStar, faBicycle, faThumbsUp, faHandPointUp, faUtensils, faClipboardList, faTimes, faBeer, faCookieBite } from '@fortawesome/free-solid-svg-icons'
+import { faPizzaSlice, faTrashAlt, faStar, faBicycle, faThumbsUp, faHandPointUp, faUtensils, faClipboardList, faTimes, faBeer, faCookieBite, faChevronDown, faArrowDown, faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons'
 import NumberFormat from 'react-number-format'
 import Modal from 'react-modal'
 import { HashLink as Link } from 'react-router-hash-link';
@@ -489,7 +489,30 @@ export default class Order extends Component {
       extraSelected: [],
       refreshmentSelected: [],
       order: [],
-      deliveryCost: 'Gratis',
+      deliveryCost: 'Gratis para',
+      deliveryNoCost: [
+        {
+          province: 'La Reina',
+          id: 0
+        },
+        {
+          province: 'Ñuñoa',
+          id: 1
+        },
+        {
+          province: 'Vitacura',
+          id: 2
+        },
+        {
+          province: 'Providencia',
+          id: 3
+        },
+        {
+          province: 'Lobarnechea',
+          id: 4
+        },
+      ],
+      deliveryCostToggleClass: false,
       modalIsOpen: false,
       fullName: '',
       contactNumber: '',
@@ -578,6 +601,12 @@ export default class Order extends Component {
     })
   }
 
+  noCostToggel = () => {
+    this.setState({
+      deliveryCostToggleClass: !this.state.deliveryCostToggleClass
+    })
+  }
+
 
   componentDidUpdate(prevProps, prevState) {
     const { catalogSelected, extraSelected, refreshmentSelected } = this.state
@@ -588,7 +617,7 @@ export default class Order extends Component {
   }
 
   render() {
-    const { catalog, extras, refreshments, order, modalIsOpen, deliveryCost, fullName, contactNumber, deliveryAddress } = this.state
+    const { catalog, extras, refreshments, order, modalIsOpen, deliveryCost, fullName, contactNumber, deliveryAddress, deliveryNoCost, deliveryCostToggleClass } = this.state
     const isCombo = <div className="combo"><Icon faIcon={faStar} /><strong>Combo</strong></div>
     let productsSummary = []
     let msgOrder = []
@@ -728,7 +757,14 @@ export default class Order extends Component {
               <div className="order-cost">
                 <div className="modal-product">
                   <span className="product-name">Delivery</span>
-                  <span className="product-msg">{deliveryCost}</span>
+                  <span className="product-msg">{deliveryCost}<span onClick={this.noCostToggel}><Icon faIcon={faArrowAltCircleDown} /></span></span>
+                  <ul className={deliveryCostToggleClass ? 'dropdown-list dropdown-list-active' : 'dropdown-list'}>{
+                    deliveryNoCost.map((item, id) => {
+                      return (
+                        <li key={id.id} className="dropdown-list-item">{item.province}</li>
+                      )
+                    })
+                  }</ul>
                 </div>
                 <strong className="product-total">Total: <NumberFormat value={totalSumary} displayType={'text'} thousandSeparator={'.'} prefix={'$'} decimalSeparator={','} /></strong>
               </div>
